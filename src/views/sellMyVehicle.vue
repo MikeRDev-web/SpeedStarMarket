@@ -1,23 +1,19 @@
-<script>
-import headerComponent from '/src/components/headerComponent.vue';
+<script setup>
 import sellForm from '/src/components/sellForm.vue';
-
-export default {
-    name: 'sellMyVehicle',
-    components: {
-        sellForm,
-        headerComponent
-    }
-}
 </script>
 
 <template>
-    <headerComponent/>
     <div class="pageContent">
         <h1>Vender mi Vehiculo</h1>
         <sellForm/>
     </div>
 </template>
 
-<style>
+<style scoped>
+.pageContent > h1 {
+    width: 100%;
+    font-size: 110%;
+    border-bottom: 1px solid var(--blackColor);
+    padding-bottom: 5px;
+}
 </style>

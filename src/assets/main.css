@@ -1,46 +1,31 @@
-#app {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  height: max-content;
+:root {
+  --background-page: #ffffffee;
+  --blackColor: #000000;
 }
 
 * {
   padding: 0;
   margin: 0;
   font-family: "Dosis", sans-serif;
+  box-sizing: border-box;
+  color: var(--blackColor);
+  /* outline: 1px solid red; */
+  transition: all .2s ease;
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0.932);
+  background-color: var(--background-page);
+}
+
+main {
+  width: 100vw;
 }
 
 .pageContent {
-  width: 90%;
+  width: 100vw;
   height: max-content;
   display: flex;
   flex-direction: column;
-  margin: 70px auto 5rem auto;
-  padding: 10px;
-}
-
-footer {
-  width: 100%;
-  margin: 0 auto;
-  height: 10px;
-  padding: 10px 0;
-  text-align: center;
-  border-top: 1px solid black;
-  position: fixed;
-  bottom: 0;
-  background-color: white;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p {
-  font-size: 20px;
-  font-weight: bold;
+  margin: 70px auto 0 auto;
+  gap: 1rem;
 }

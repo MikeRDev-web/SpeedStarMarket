@@ -1,7 +1,7 @@
 <?php
 $serverName = 'localhost';
-$username = 'mike';
-$password = 'mangeL.123';
+$username = 'root';
+$password = '';
 $dbName = 'motor_finder';
 
 $conn = new mysqli($serverName, $username, $password, $dbName);
